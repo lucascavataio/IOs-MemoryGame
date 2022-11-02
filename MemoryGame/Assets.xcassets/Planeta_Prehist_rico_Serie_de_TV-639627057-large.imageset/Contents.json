@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Planeta_Prehist_rico_Serie_de_TV-639627057-large.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
