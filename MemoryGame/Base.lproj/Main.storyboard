@@ -29,7 +29,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch to start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEB-ld-4wQ">
-                                <rect key="frame" x="63" y="418" width="289" height="40"/>
+                                <rect key="frame" x="114" y="428" width="186.5" height="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,27 +42,39 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Ecw-IN-BFK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3JC-PU-pno"/>
-                            <constraint firstItem="Ecw-IN-BFK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3PB-H0-4Yw"/>
-                            <constraint firstItem="Ecw-IN-BFK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AWb-sp-2VJ"/>
-                            <constraint firstItem="gEB-ld-4wQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="374" id="Ae8-ix-q6m"/>
-                            <constraint firstAttribute="bottom" secondItem="Ecw-IN-BFK" secondAttribute="bottom" id="G4I-jj-fTp"/>
+                            <constraint firstItem="gEB-ld-4wQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="F8J-Mq-Qgl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5qG-Td-uCk" secondAttribute="bottom" id="Gm6-Br-IfA"/>
                             <constraint firstItem="5qG-Td-uCk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IJD-r1-zuQ"/>
-                            <constraint firstItem="Ecw-IN-BFK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ihm-8i-CNa"/>
-                            <constraint firstAttribute="bottom" secondItem="Ecw-IN-BFK" secondAttribute="bottom" id="J9n-3H-2ic"/>
-                            <constraint firstItem="Ecw-IN-BFK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JNn-gK-wkf"/>
-                            <constraint firstItem="Ecw-IN-BFK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NDb-6J-Dv6"/>
-                            <constraint firstItem="gEB-ld-4wQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="Nyc-gF-3aT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gEB-ld-4wQ" secondAttribute="trailing" constant="62" id="WcB-fl-1CP"/>
+                            <constraint firstItem="Ecw-IN-BFK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="JXr-oe-omG"/>
+                            <constraint firstAttribute="bottom" secondItem="Ecw-IN-BFK" secondAttribute="bottom" id="MFH-gK-w5y"/>
+                            <constraint firstItem="gEB-ld-4wQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ngm-DU-koj"/>
+                            <constraint firstItem="Ecw-IN-BFK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PV1-oA-ArN"/>
+                            <constraint firstItem="Ecw-IN-BFK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="X3n-gc-H8c"/>
+                            <constraint firstItem="Ecw-IN-BFK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-201" id="bSl-Qd-F5C"/>
                             <constraint firstItem="5qG-Td-uCk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oPj-4O-Pxq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5qG-Td-uCk" secondAttribute="trailing" id="r0y-gU-7T4"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PV1-oA-ArN"/>
+                                <exclude reference="bSl-Qd-F5C"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="bSl-Qd-F5C"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="PV1-oA-ArN"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+            <point key="canvasLocation" x="28.794642857142854" y="82.608695652173921"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Q0O-fQ-HB8">
@@ -90,19 +102,36 @@
                         <viewLayoutGuide key="safeArea" id="tYg-ss-jYC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="DsT-9Y-FXy" secondAttribute="bottom" id="0hu-6T-x3C"/>
+                            <constraint firstAttribute="bottom" secondItem="DsT-9Y-FXy" secondAttribute="bottom" id="BP5-At-2X9"/>
                             <constraint firstItem="DsT-9Y-FXy" firstAttribute="top" secondItem="TiJ-Fu-4Zf" secondAttribute="top" id="SJw-fj-HRJ"/>
                             <constraint firstItem="JxY-vV-gHp" firstAttribute="centerY" secondItem="TiJ-Fu-4Zf" secondAttribute="centerY" id="VGq-oa-pMo"/>
                             <constraint firstItem="JxY-vV-gHp" firstAttribute="centerX" secondItem="TiJ-Fu-4Zf" secondAttribute="centerX" id="Ywe-XV-CwN"/>
-                            <constraint firstItem="DsT-9Y-FXy" firstAttribute="trailing" secondItem="tYg-ss-jYC" secondAttribute="trailing" id="thL-5A-CUu"/>
-                            <constraint firstItem="DsT-9Y-FXy" firstAttribute="leading" secondItem="tYg-ss-jYC" secondAttribute="leading" id="yXj-HD-kxV"/>
+                            <constraint firstItem="DsT-9Y-FXy" firstAttribute="top" secondItem="TiJ-Fu-4Zf" secondAttribute="top" constant="-385" id="qby-1R-bdc"/>
+                            <constraint firstAttribute="trailing" secondItem="DsT-9Y-FXy" secondAttribute="trailing" id="wAS-ZN-j2X"/>
+                            <constraint firstItem="DsT-9Y-FXy" firstAttribute="leading" secondItem="TiJ-Fu-4Zf" secondAttribute="leading" id="yrd-jO-ZGd"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="SJw-fj-HRJ"/>
+                                <exclude reference="qby-1R-bdc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="qby-1R-bdc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="SJw-fj-HRJ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="jyF-kl-gzT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Xj-s7-iti" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1278.2608695652175" y="82.366071428571431"/>
+            <point key="canvasLocation" x="1277.6785714285713" y="81.159420289855078"/>
         </scene>
         <!--Simon Says Controller-->
         <scene sceneID="Dt8-pf-WYO">
@@ -117,181 +146,34 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="mhg-FC-W7c"/>
                                     <constraint firstAttribute="width" constant="50" id="u5s-Gp-OB2"/>
+                                    <constraint firstAttribute="height" constant="25" id="w2T-bI-mav"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background" image="back-arrow"/>
                                 </buttonConfiguration>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="mhg-FC-W7c"/>
+                                        <exclude reference="u5s-Gp-OB2"/>
+                                        <exclude reference="w2T-bI-mav"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="w2T-bI-mav"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="mhg-FC-W7c"/>
+                                        <include reference="u5s-Gp-OB2"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="00H-nh-rhp" kind="presentation" modalPresentationStyle="fullScreen" id="7Lf-Kd-pAM"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dh7-3z-Hoh" userLabel="ImagesView">
-                                <rect key="frame" x="43" y="257" width="328" height="292"/>
-                                <subviews>
-                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rex1" translatesAutoresizingMaskIntoConstraints="NO" id="dmT-cV-MOo">
-                                        <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Therizinosaurus" id="RWD-3c-nUW">
-                                        <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Belzebufo" id="yXE-ey-RYS">
-                                        <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mononycus" id="Jiz-N6-DfI">
-                                        <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RedEyesTherizinosaurus" id="tMX-De-YwY">
-                                        <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rex2" id="xMp-bY-cnz">
-                                        <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Planeta_Prehist_rico_Serie_de_TV-639627057-large" id="Kz8-U6-M0K">
-                                        <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Carnotaurus" id="D9u-Vj-vSq">
-                                        <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gaelle-seguillon-screenshot-2022-07-06-114619" id="dvT-aI-GtA">
-                                        <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Dh7-3z-Hoh" secondAttribute="height" multiplier="82:73" id="wIg-DE-keo"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ay-eJ-wnO" userLabel="ButtonsView">
-                                <rect key="frame" x="20" y="179" width="374" height="370"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="a9d-qT-8yI">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="370"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="UxG-Wg-2II">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="121.5"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcJ-Dj-6Xb" userLabel="Rex1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="122.5" height="121.5"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
-                                                            <backgroundConfiguration key="background" image="Rex1" imageContentMode="scaleToFill"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="Hlm-8E-59T"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KE0-gt-IU2" userLabel="Theri1">
-                                                        <rect key="frame" x="125.5" y="0.0" width="123" height="121.5"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
-                                                            <backgroundConfiguration key="background" image="Therizinosaurus" imageContentMode="scaleToFill"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="IzF-VP-DSG"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDb-8J-eJ1" userLabel="Beelzebufo">
-                                                        <rect key="frame" x="251.5" y="0.0" width="122.5" height="121.5"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
-                                                            <backgroundConfiguration key="background" image="Belzebufo" imageContentMode="scaleToFill"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="CaI-2p-1w0"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="yA0-N8-mnN">
-                                                <rect key="frame" x="0.0" y="124.5" width="374" height="121"/>
-                                                <subviews>
-                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQI-6j-eeg" userLabel="Mononycus">
-                                                        <rect key="frame" x="0.0" y="0.0" width="122.5" height="121"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
-                                                            <backgroundConfiguration key="background" image="Mononycus" imageContentMode="scaleToFill" strokeOutset="0.0"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="3N5-mt-kPH"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06N-pp-86X" userLabel="Theri2">
-                                                        <rect key="frame" x="125.5" y="0.0" width="123" height="121"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
-                                                            <backgroundConfiguration key="background" image="RedEyesTherizinosaurus"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="7tn-by-5uf"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esb-Jn-hMj" userLabel="Rex2">
-                                                        <rect key="frame" x="251.5" y="0.0" width="122.5" height="121"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
-                                                            <backgroundConfiguration key="background" image="Rex2" imageContentMode="scaleToFill"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="0MQ-Pk-Wwz"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="JkG-Ew-iTt">
-                                                <rect key="frame" x="0.0" y="248.5" width="374" height="121.5"/>
-                                                <subviews>
-                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avN-Jt-iSL" userLabel="Brontos">
-                                                        <rect key="frame" x="0.0" y="0.0" width="122.5" height="121.5"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
-                                                            <backgroundConfiguration key="background" image="Planeta_Prehist_rico_Serie_de_TV-639627057-large" imageContentMode="scaleToFill"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="uao-Ze-wwz"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l19-HW-ZXi" userLabel="Carnotaurus">
-                                                        <rect key="frame" x="125.5" y="0.0" width="123" height="121.5"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
-                                                            <backgroundConfiguration key="background" image="Carnotaurus" imageContentMode="scaleToFill"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="PeN-cG-n04"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWG-LP-MbE" userLabel="Mosasaurus">
-                                                        <rect key="frame" x="251.5" y="0.0" width="122.5" height="121.5"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
-                                                            <backgroundConfiguration key="background" image="gaelle-seguillon-screenshot-2022-07-06-114619" imageContentMode="scaleToFill"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="PnM-Rp-z3s"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="a9d-qT-8yI" secondAttribute="trailing" id="4ZI-UR-6Rg"/>
-                                    <constraint firstAttribute="bottom" secondItem="a9d-qT-8yI" secondAttribute="bottom" id="7Wo-vP-a3c"/>
-                                    <constraint firstItem="a9d-qT-8yI" firstAttribute="top" secondItem="5ay-eJ-wnO" secondAttribute="top" id="JHl-pi-UQG"/>
-                                    <constraint firstAttribute="width" secondItem="5ay-eJ-wnO" secondAttribute="height" multiplier="187:185" id="SQj-Bk-k9c"/>
-                                    <constraint firstItem="a9d-qT-8yI" firstAttribute="leading" secondItem="5ay-eJ-wnO" secondAttribute="leading" id="X9B-Tx-ygB"/>
-                                </constraints>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsH-7N-EZ9" userLabel="Score">
                                 <rect key="frame" x="100" y="77" width="214" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -304,25 +186,298 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQU-Zq-OnH" userLabel="ContainerView">
+                                <rect key="frame" x="43" y="350" width="328" height="197"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ay-eJ-wnO" userLabel="ButtonsView">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="197"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="a9d-qT-8yI">
+                                                <rect key="frame" x="0.0" y="0.0" width="328" height="197"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="UxG-Wg-2II">
+                                                        <rect key="frame" x="0.0" y="0.0" width="328" height="63.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcJ-Dj-6Xb" userLabel="Rex1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="107.5" height="63.5"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
+                                                                    <backgroundConfiguration key="background" image="Rex1" imageContentMode="scaleToFill"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="Hlm-8E-59T"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KE0-gt-IU2" userLabel="Theri1">
+                                                                <rect key="frame" x="110.5" y="0.0" width="107" height="63.5"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
+                                                                    <backgroundConfiguration key="background" image="Therizinosaurus" imageContentMode="scaleToFill"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="IzF-VP-DSG"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDb-8J-eJ1" userLabel="Beelzebufo">
+                                                                <rect key="frame" x="220.5" y="0.0" width="107.5" height="63.5"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
+                                                                    <backgroundConfiguration key="background" image="Belzebufo" imageContentMode="scaleToFill"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="CaI-2p-1w0"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="yA0-N8-mnN">
+                                                        <rect key="frame" x="0.0" y="66.5" width="328" height="64"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQI-6j-eeg" userLabel="Mononycus">
+                                                                <rect key="frame" x="0.0" y="0.0" width="107.5" height="64"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
+                                                                    <backgroundConfiguration key="background" image="Mononycus" imageContentMode="scaleToFill" strokeOutset="0.0"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="3N5-mt-kPH"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06N-pp-86X" userLabel="Theri2">
+                                                                <rect key="frame" x="110.5" y="0.0" width="107" height="64"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
+                                                                    <backgroundConfiguration key="background" image="RedEyesTherizinosaurus"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="7tn-by-5uf"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esb-Jn-hMj" userLabel="Rex2">
+                                                                <rect key="frame" x="220.5" y="0.0" width="107.5" height="64"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
+                                                                    <backgroundConfiguration key="background" image="Rex2" imageContentMode="scaleToFill"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="0MQ-Pk-Wwz"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="JkG-Ew-iTt">
+                                                        <rect key="frame" x="0.0" y="133.5" width="328" height="63.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avN-Jt-iSL" userLabel="Brontos">
+                                                                <rect key="frame" x="0.0" y="0.0" width="107.5" height="63.5"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
+                                                                    <backgroundConfiguration key="background" image="Planeta_Prehist_rico_Serie_de_TV-639627057-large" imageContentMode="scaleToFill"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="uao-Ze-wwz"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l19-HW-ZXi" userLabel="Carnotaurus">
+                                                                <rect key="frame" x="110.5" y="0.0" width="107" height="63.5"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
+                                                                    <backgroundConfiguration key="background" image="Carnotaurus" imageContentMode="scaleToFill"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="PeN-cG-n04"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWG-LP-MbE" userLabel="Mosasaurus">
+                                                                <rect key="frame" x="220.5" y="0.0" width="107.5" height="63.5"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
+                                                                    <backgroundConfiguration key="background" image="gaelle-seguillon-screenshot-2022-07-06-114619" imageContentMode="scaleToFill"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="OnPressedButton:" destination="zQO-Fa-XLB" eventType="touchUpInside" id="PnM-Rp-z3s"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="a9d-qT-8yI" secondAttribute="bottom" id="5U5-me-O4s"/>
+                                            <constraint firstItem="a9d-qT-8yI" firstAttribute="top" secondItem="5ay-eJ-wnO" secondAttribute="top" id="KDJ-PD-Ry3"/>
+                                            <constraint firstItem="a9d-qT-8yI" firstAttribute="top" secondItem="5ay-eJ-wnO" secondAttribute="top" id="Ta6-hh-JlQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="a9d-qT-8yI" secondAttribute="bottom" id="U0T-yJ-lPj"/>
+                                            <constraint firstAttribute="trailing" secondItem="a9d-qT-8yI" secondAttribute="trailing" id="ZXX-x8-rvc"/>
+                                            <constraint firstItem="a9d-qT-8yI" firstAttribute="leading" secondItem="5ay-eJ-wnO" secondAttribute="leading" id="dfb-2S-P1E"/>
+                                            <constraint firstAttribute="trailing" secondItem="a9d-qT-8yI" secondAttribute="trailing" id="eN0-9X-1q3"/>
+                                            <constraint firstItem="a9d-qT-8yI" firstAttribute="leading" secondItem="5ay-eJ-wnO" secondAttribute="leading" id="u0T-A0-vWE"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="5U5-me-O4s"/>
+                                                <exclude reference="KDJ-PD-Ry3"/>
+                                                <exclude reference="Ta6-hh-JlQ"/>
+                                                <exclude reference="U0T-yJ-lPj"/>
+                                                <exclude reference="ZXX-x8-rvc"/>
+                                                <exclude reference="dfb-2S-P1E"/>
+                                                <exclude reference="eN0-9X-1q3"/>
+                                                <exclude reference="u0T-A0-vWE"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="5U5-me-O4s"/>
+                                                <include reference="KDJ-PD-Ry3"/>
+                                                <include reference="eN0-9X-1q3"/>
+                                                <include reference="u0T-A0-vWE"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Ta6-hh-JlQ"/>
+                                                <include reference="U0T-yJ-lPj"/>
+                                                <include reference="ZXX-x8-rvc"/>
+                                                <include reference="dfb-2S-P1E"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dh7-3z-Hoh" userLabel="ImagesView">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="197"/>
+                                        <subviews>
+                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rex1" translatesAutoresizingMaskIntoConstraints="NO" id="dmT-cV-MOo">
+                                                <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Therizinosaurus" id="RWD-3c-nUW">
+                                                <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Belzebufo" id="yXE-ey-RYS">
+                                                <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mononycus" id="Jiz-N6-DfI">
+                                                <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RedEyesTherizinosaurus" id="tMX-De-YwY">
+                                                <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rex2" id="xMp-bY-cnz">
+                                                <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Planeta_Prehist_rico_Serie_de_TV-639627057-large" id="Kz8-U6-M0K">
+                                                <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Carnotaurus" id="D9u-Vj-vSq">
+                                                <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gaelle-seguillon-screenshot-2022-07-06-114619" id="dvT-aI-GtA">
+                                                <rect key="frame" x="0.0" y="0.0" width="328" height="202"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Dh7-3z-Hoh" secondAttribute="bottom" id="FQq-Xv-hzi"/>
+                                    <constraint firstItem="Dh7-3z-Hoh" firstAttribute="leading" secondItem="eQU-Zq-OnH" secondAttribute="leading" id="K6Q-3d-uOC"/>
+                                    <constraint firstItem="5ay-eJ-wnO" firstAttribute="top" secondItem="eQU-Zq-OnH" secondAttribute="top" id="ROm-DI-gF7"/>
+                                    <constraint firstAttribute="bottom" secondItem="5ay-eJ-wnO" secondAttribute="bottom" id="aF9-Zz-Vnu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dh7-3z-Hoh" secondAttribute="trailing" id="aer-ey-Gn0"/>
+                                    <constraint firstAttribute="trailing" secondItem="5ay-eJ-wnO" secondAttribute="trailing" id="eWl-Sn-1N9"/>
+                                    <constraint firstItem="5ay-eJ-wnO" firstAttribute="leading" secondItem="eQU-Zq-OnH" secondAttribute="leading" id="lrF-Cs-RLk"/>
+                                    <constraint firstItem="Dh7-3z-Hoh" firstAttribute="top" secondItem="eQU-Zq-OnH" secondAttribute="top" id="v5J-Pb-tQB"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bu4-nA-1L3"/>
                         <color key="backgroundColor" red="0.74939924479999998" green="0.5524035692" blue="0.52545553450000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Bu4-nA-1L3" firstAttribute="trailing" secondItem="eQU-Zq-OnH" secondAttribute="trailing" constant="43" id="0yf-Af-JGL"/>
                             <constraint firstItem="Bu4-nA-1L3" firstAttribute="trailing" secondItem="ZsH-7N-EZ9" secondAttribute="trailing" constant="100" id="2Th-3J-T2K"/>
-                            <constraint firstItem="5ay-eJ-wnO" firstAttribute="leading" secondItem="Bu4-nA-1L3" secondAttribute="leading" constant="20" id="3hh-14-LV8"/>
                             <constraint firstItem="ZsH-7N-EZ9" firstAttribute="top" secondItem="Bu4-nA-1L3" secondAttribute="top" constant="33" id="4i7-dk-6Ac"/>
-                            <constraint firstItem="Dh7-3z-Hoh" firstAttribute="leading" secondItem="Bu4-nA-1L3" secondAttribute="leading" constant="43" id="DTu-Q1-mXd"/>
+                            <constraint firstItem="ea0-IQ-j3v" firstAttribute="top" secondItem="ZsH-7N-EZ9" secondAttribute="bottom" constant="20" id="8He-7Y-vno"/>
+                            <constraint firstItem="Bu4-nA-1L3" firstAttribute="trailing" secondItem="eQU-Zq-OnH" secondAttribute="trailing" constant="240" id="BaG-3C-KBG"/>
                             <constraint firstItem="ea0-IQ-j3v" firstAttribute="top" secondItem="ZsH-7N-EZ9" secondAttribute="bottom" constant="10" id="Dpe-NG-zF4"/>
+                            <constraint firstItem="ZsH-7N-EZ9" firstAttribute="centerX" secondItem="7EV-jF-JSs" secondAttribute="centerX" id="EzN-3I-FeD"/>
+                            <constraint firstItem="eQU-Zq-OnH" firstAttribute="leading" secondItem="Bu4-nA-1L3" secondAttribute="leading" constant="43" id="Ht4-nt-Vn7"/>
                             <constraint firstItem="FJe-Q8-qI6" firstAttribute="centerY" secondItem="7EV-jF-JSs" secondAttribute="centerY" constant="-380" id="Kmz-Lb-Mre"/>
-                            <constraint firstItem="Bu4-nA-1L3" firstAttribute="trailing" secondItem="Dh7-3z-Hoh" secondAttribute="trailing" constant="43" id="Rig-41-MXl"/>
+                            <constraint firstItem="eQU-Zq-OnH" firstAttribute="top" secondItem="ea0-IQ-j3v" secondAttribute="bottom" constant="186" id="Ltb-Cc-zz3"/>
+                            <constraint firstItem="eQU-Zq-OnH" firstAttribute="leading" secondItem="Bu4-nA-1L3" secondAttribute="leading" constant="240" id="RnW-Ed-Lgp"/>
+                            <constraint firstItem="Bu4-nA-1L3" firstAttribute="bottom" secondItem="eQU-Zq-OnH" secondAttribute="bottom" constant="54" id="SKe-Ld-Dhi"/>
                             <constraint firstItem="Bu4-nA-1L3" firstAttribute="trailing" secondItem="ea0-IQ-j3v" secondAttribute="trailing" constant="100" id="TND-Pr-PKg"/>
                             <constraint firstItem="ea0-IQ-j3v" firstAttribute="leading" secondItem="Bu4-nA-1L3" secondAttribute="leading" constant="100" id="UOd-HP-YGo"/>
-                            <constraint firstItem="Dh7-3z-Hoh" firstAttribute="top" secondItem="Bu4-nA-1L3" secondAttribute="top" constant="213" id="aVd-ai-NL6"/>
-                            <constraint firstItem="5ay-eJ-wnO" firstAttribute="top" secondItem="Bu4-nA-1L3" secondAttribute="top" constant="135" id="l7B-rR-sSz"/>
+                            <constraint firstItem="ZsH-7N-EZ9" firstAttribute="top" secondItem="Bu4-nA-1L3" secondAttribute="top" constant="20" id="dce-lO-oaw"/>
+                            <constraint firstItem="ea0-IQ-j3v" firstAttribute="centerX" secondItem="7EV-jF-JSs" secondAttribute="centerX" id="dvQ-Wg-9sT"/>
+                            <constraint firstItem="eQU-Zq-OnH" firstAttribute="top" secondItem="ea0-IQ-j3v" secondAttribute="bottom" constant="25" id="eXB-Ww-cuc"/>
                             <constraint firstItem="FJe-Q8-qI6" firstAttribute="centerX" secondItem="7EV-jF-JSs" secondAttribute="centerX" constant="-160" id="oX3-4C-B6b"/>
-                            <constraint firstItem="Bu4-nA-1L3" firstAttribute="trailing" secondItem="5ay-eJ-wnO" secondAttribute="trailing" constant="20" id="pCR-D3-kNA"/>
+                            <constraint firstItem="Bu4-nA-1L3" firstAttribute="bottom" secondItem="eQU-Zq-OnH" secondAttribute="bottom" constant="315" id="qmz-qz-7Qh"/>
+                            <constraint firstItem="FJe-Q8-qI6" firstAttribute="top" secondItem="Bu4-nA-1L3" secondAttribute="top" constant="43" id="r4D-Hg-bdJ"/>
+                            <constraint firstItem="FJe-Q8-qI6" firstAttribute="leading" secondItem="7EV-jF-JSs" secondAttribute="leading" constant="22" id="rXz-4T-Eeo"/>
                             <constraint firstItem="ZsH-7N-EZ9" firstAttribute="leading" secondItem="Bu4-nA-1L3" secondAttribute="leading" constant="100" id="seZ-t1-ySv"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0yf-Af-JGL"/>
+                                <exclude reference="2Th-3J-T2K"/>
+                                <exclude reference="BaG-3C-KBG"/>
+                                <exclude reference="SKe-Ld-Dhi"/>
+                                <exclude reference="TND-Pr-PKg"/>
+                                <exclude reference="qmz-qz-7Qh"/>
+                                <exclude reference="Kmz-Lb-Mre"/>
+                                <exclude reference="oX3-4C-B6b"/>
+                                <exclude reference="r4D-Hg-bdJ"/>
+                                <exclude reference="rXz-4T-Eeo"/>
+                                <exclude reference="4i7-dk-6Ac"/>
+                                <exclude reference="EzN-3I-FeD"/>
+                                <exclude reference="dce-lO-oaw"/>
+                                <exclude reference="seZ-t1-ySv"/>
+                                <exclude reference="8He-7Y-vno"/>
+                                <exclude reference="Dpe-NG-zF4"/>
+                                <exclude reference="UOd-HP-YGo"/>
+                                <exclude reference="dvQ-Wg-9sT"/>
+                                <exclude reference="Ht4-nt-Vn7"/>
+                                <exclude reference="Ltb-Cc-zz3"/>
+                                <exclude reference="RnW-Ed-Lgp"/>
+                                <exclude reference="eXB-Ww-cuc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="BaG-3C-KBG"/>
+                                <include reference="SKe-Ld-Dhi"/>
+                                <include reference="r4D-Hg-bdJ"/>
+                                <include reference="rXz-4T-Eeo"/>
+                                <include reference="EzN-3I-FeD"/>
+                                <include reference="dce-lO-oaw"/>
+                                <include reference="8He-7Y-vno"/>
+                                <include reference="dvQ-Wg-9sT"/>
+                                <include reference="RnW-Ed-Lgp"/>
+                                <include reference="eXB-Ww-cuc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="0yf-Af-JGL"/>
+                                <include reference="2Th-3J-T2K"/>
+                                <include reference="TND-Pr-PKg"/>
+                                <include reference="qmz-qz-7Qh"/>
+                                <include reference="Kmz-Lb-Mre"/>
+                                <include reference="oX3-4C-B6b"/>
+                                <include reference="4i7-dk-6Ac"/>
+                                <include reference="seZ-t1-ySv"/>
+                                <include reference="Dpe-NG-zF4"/>
+                                <include reference="UOd-HP-YGo"/>
+                                <include reference="Ht4-nt-Vn7"/>
+                                <include reference="Ltb-Cc-zz3"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="AEB-Pp-3dJ"/>
                     <connections>
@@ -352,11 +507,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sAA-tw-DAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2562.3188405797105" y="81.696428571428569"/>
+            <point key="canvasLocation" x="2561.3839285714284" y="81.159420289855078"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7Lf-Kd-pAM"/>
+        <segue reference="csH-hb-wv8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Belzebufo" width="2000" height="1125"/>
