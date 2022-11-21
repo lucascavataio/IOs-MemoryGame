@@ -17,6 +17,7 @@
 		0D1D0B9429015C0C0042363F /* MemoryGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1D0B9329015C0C0042363F /* MemoryGameUITests.swift */; };
 		0D1D0B9629015C0C0042363F /* MemoryGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1D0B9529015C0C0042363F /* MemoryGameUITestsLaunchTests.swift */; };
 		0D205AC129069D81008313A6 /* SimonSaysController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D205AC029069D81008313A6 /* SimonSaysController.swift */; };
+		0D2F2C72292B8D1E00AB097A /* DifficultyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2F2C71292B8D1E00AB097A /* DifficultyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0D1D0B9329015C0C0042363F /* MemoryGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameUITests.swift; sourceTree = "<group>"; };
 		0D1D0B9529015C0C0042363F /* MemoryGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0D205AC029069D81008313A6 /* SimonSaysController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonSaysController.swift; sourceTree = "<group>"; };
+		0D2F2C71292B8D1E00AB097A /* DifficultyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		0D1D0B7129015C0A0042363F /* MemoryGame */ = {
 			isa = PBXGroup;
 			children = (
+				0D2F2C71292B8D1E00AB097A /* DifficultyManager.swift */,
 				0D1D0B7229015C0A0042363F /* AppDelegate.swift */,
 				0D1D0B7429015C0A0042363F /* SceneDelegate.swift */,
 				0D1D0B7629015C0A0042363F /* ViewController.swift */,
@@ -265,6 +268,7 @@
 				0D1D0B7329015C0A0042363F /* AppDelegate.swift in Sources */,
 				0D205AC129069D81008313A6 /* SimonSaysController.swift in Sources */,
 				0D1D0B7529015C0A0042363F /* SceneDelegate.swift in Sources */,
+				0D2F2C72292B8D1E00AB097A /* DifficultyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

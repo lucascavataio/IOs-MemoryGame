@@ -79,7 +79,7 @@
         <!--View Controller-->
         <scene sceneID="Q0O-fQ-HB8">
             <objects>
-                <viewController id="00H-nh-rhp" sceneMemberID="viewController">
+                <viewController id="00H-nh-rhp" customClass="ViewController" customModule="MemoryGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TiJ-Fu-4Zf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,25 +87,55 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TitleMenuBackground" translatesAutoresizingMaskIntoConstraints="NO" id="DsT-9Y-FXy">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxY-vV-gHp">
-                                <rect key="frame" x="165.5" y="424.5" width="83" height="47"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="PLAY">
-                                    <fontDescription key="titleFontDescription" type="system" weight="thin" pointSize="27"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="zQO-Fa-XLB" kind="presentation" modalPresentationStyle="fullScreen" id="98p-kX-y82"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="ifa-KD-wNC">
+                                <rect key="frame" x="129" y="319.5" width="156.5" height="257.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxY-vV-gHp">
+                                        <rect key="frame" x="0.0" y="0.0" width="156.5" height="46.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="RECRUIT">
+                                            <fontDescription key="titleFontDescription" type="system" weight="thin" pointSize="27"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="SelectDifficult:" destination="00H-nh-rhp" eventType="touchUpInside" id="P8H-D5-Fqa"/>
+                                            <segue destination="zQO-Fa-XLB" kind="presentation" modalPresentationStyle="fullScreen" id="MRV-2L-R5I"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzZ-xk-4Uc">
+                                        <rect key="frame" x="0.0" y="105.5" width="156.5" height="46.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="HARDENED">
+                                            <fontDescription key="titleFontDescription" type="system" weight="thin" pointSize="27"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="SelectDifficult:" destination="00H-nh-rhp" eventType="touchUpInside" id="FVM-wn-R04"/>
+                                            <segue destination="zQO-Fa-XLB" kind="presentation" modalPresentationStyle="fullScreen" id="J56-PK-xhY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbt-Ey-krJ">
+                                        <rect key="frame" x="0.0" y="211" width="156.5" height="46.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="VETERAN">
+                                            <fontDescription key="titleFontDescription" type="system" weight="thin" pointSize="27"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="SelectDifficult:" destination="00H-nh-rhp" eventType="touchUpInside" id="FYR-4A-WAj"/>
+                                            <segue destination="zQO-Fa-XLB" kind="presentation" modalPresentationStyle="fullScreen" id="BQz-t1-L0l"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tYg-ss-jYC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ifa-KD-wNC" firstAttribute="centerY" secondItem="TiJ-Fu-4Zf" secondAttribute="centerY" id="4Ky-W3-IMm"/>
                             <constraint firstAttribute="bottom" secondItem="DsT-9Y-FXy" secondAttribute="bottom" id="BP5-At-2X9"/>
                             <constraint firstItem="DsT-9Y-FXy" firstAttribute="top" secondItem="TiJ-Fu-4Zf" secondAttribute="top" id="SJw-fj-HRJ"/>
-                            <constraint firstItem="JxY-vV-gHp" firstAttribute="centerY" secondItem="TiJ-Fu-4Zf" secondAttribute="centerY" id="VGq-oa-pMo"/>
-                            <constraint firstItem="JxY-vV-gHp" firstAttribute="centerX" secondItem="TiJ-Fu-4Zf" secondAttribute="centerX" id="Ywe-XV-CwN"/>
+                            <constraint firstItem="ifa-KD-wNC" firstAttribute="centerX" secondItem="TiJ-Fu-4Zf" secondAttribute="centerX" id="gdR-Nj-huQ"/>
                             <constraint firstItem="DsT-9Y-FXy" firstAttribute="top" secondItem="TiJ-Fu-4Zf" secondAttribute="top" constant="-385" id="qby-1R-bdc"/>
                             <constraint firstAttribute="trailing" secondItem="DsT-9Y-FXy" secondAttribute="trailing" id="wAS-ZN-j2X"/>
                             <constraint firstItem="DsT-9Y-FXy" firstAttribute="leading" secondItem="TiJ-Fu-4Zf" secondAttribute="leading" id="yrd-jO-ZGd"/>
@@ -131,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Xj-s7-iti" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1277.6785714285713" y="81.159420289855078"/>
+            <point key="canvasLocation" x="1276.8115942028987" y="81.026785714285708"/>
         </scene>
         <!--Simon Says Controller-->
         <scene sceneID="Dt8-pf-WYO">
@@ -407,7 +437,6 @@
                             <constraint firstItem="ea0-IQ-j3v" firstAttribute="top" secondItem="ZsH-7N-EZ9" secondAttribute="bottom" constant="10" id="Dpe-NG-zF4"/>
                             <constraint firstItem="ZsH-7N-EZ9" firstAttribute="centerX" secondItem="7EV-jF-JSs" secondAttribute="centerX" id="EzN-3I-FeD"/>
                             <constraint firstItem="eQU-Zq-OnH" firstAttribute="leading" secondItem="Bu4-nA-1L3" secondAttribute="leading" constant="43" id="Ht4-nt-Vn7"/>
-                            <constraint firstItem="FJe-Q8-qI6" firstAttribute="centerY" secondItem="7EV-jF-JSs" secondAttribute="centerY" constant="-380" id="Kmz-Lb-Mre"/>
                             <constraint firstItem="eQU-Zq-OnH" firstAttribute="top" secondItem="ea0-IQ-j3v" secondAttribute="bottom" constant="186" id="Ltb-Cc-zz3"/>
                             <constraint firstItem="eQU-Zq-OnH" firstAttribute="leading" secondItem="Bu4-nA-1L3" secondAttribute="leading" constant="240" id="RnW-Ed-Lgp"/>
                             <constraint firstItem="Bu4-nA-1L3" firstAttribute="bottom" secondItem="eQU-Zq-OnH" secondAttribute="bottom" constant="54" id="SKe-Ld-Dhi"/>
@@ -416,11 +445,12 @@
                             <constraint firstItem="ZsH-7N-EZ9" firstAttribute="top" secondItem="Bu4-nA-1L3" secondAttribute="top" constant="20" id="dce-lO-oaw"/>
                             <constraint firstItem="ea0-IQ-j3v" firstAttribute="centerX" secondItem="7EV-jF-JSs" secondAttribute="centerX" id="dvQ-Wg-9sT"/>
                             <constraint firstItem="eQU-Zq-OnH" firstAttribute="top" secondItem="ea0-IQ-j3v" secondAttribute="bottom" constant="25" id="eXB-Ww-cuc"/>
-                            <constraint firstItem="FJe-Q8-qI6" firstAttribute="centerX" secondItem="7EV-jF-JSs" secondAttribute="centerX" constant="-160" id="oX3-4C-B6b"/>
+                            <constraint firstItem="FJe-Q8-qI6" firstAttribute="leading" secondItem="Bu4-nA-1L3" secondAttribute="leading" constant="22" id="nwl-YL-pjC"/>
                             <constraint firstItem="Bu4-nA-1L3" firstAttribute="bottom" secondItem="eQU-Zq-OnH" secondAttribute="bottom" constant="315" id="qmz-qz-7Qh"/>
                             <constraint firstItem="FJe-Q8-qI6" firstAttribute="top" secondItem="Bu4-nA-1L3" secondAttribute="top" constant="43" id="r4D-Hg-bdJ"/>
                             <constraint firstItem="FJe-Q8-qI6" firstAttribute="leading" secondItem="7EV-jF-JSs" secondAttribute="leading" constant="22" id="rXz-4T-Eeo"/>
                             <constraint firstItem="ZsH-7N-EZ9" firstAttribute="leading" secondItem="Bu4-nA-1L3" secondAttribute="leading" constant="100" id="seZ-t1-ySv"/>
+                            <constraint firstItem="FJe-Q8-qI6" firstAttribute="top" secondItem="7EV-jF-JSs" secondAttribute="top" constant="43" id="vza-9Y-PqS"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -430,22 +460,22 @@
                                 <exclude reference="SKe-Ld-Dhi"/>
                                 <exclude reference="TND-Pr-PKg"/>
                                 <exclude reference="qmz-qz-7Qh"/>
-                                <exclude reference="Kmz-Lb-Mre"/>
-                                <exclude reference="oX3-4C-B6b"/>
+                                <exclude reference="nwl-YL-pjC"/>
                                 <exclude reference="r4D-Hg-bdJ"/>
                                 <exclude reference="rXz-4T-Eeo"/>
-                                <exclude reference="4i7-dk-6Ac"/>
-                                <exclude reference="EzN-3I-FeD"/>
-                                <exclude reference="dce-lO-oaw"/>
-                                <exclude reference="seZ-t1-ySv"/>
-                                <exclude reference="8He-7Y-vno"/>
-                                <exclude reference="Dpe-NG-zF4"/>
-                                <exclude reference="UOd-HP-YGo"/>
-                                <exclude reference="dvQ-Wg-9sT"/>
+                                <exclude reference="vza-9Y-PqS"/>
                                 <exclude reference="Ht4-nt-Vn7"/>
                                 <exclude reference="Ltb-Cc-zz3"/>
                                 <exclude reference="RnW-Ed-Lgp"/>
                                 <exclude reference="eXB-Ww-cuc"/>
+                                <exclude reference="8He-7Y-vno"/>
+                                <exclude reference="Dpe-NG-zF4"/>
+                                <exclude reference="UOd-HP-YGo"/>
+                                <exclude reference="dvQ-Wg-9sT"/>
+                                <exclude reference="4i7-dk-6Ac"/>
+                                <exclude reference="EzN-3I-FeD"/>
+                                <exclude reference="dce-lO-oaw"/>
+                                <exclude reference="seZ-t1-ySv"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -454,12 +484,12 @@
                                 <include reference="SKe-Ld-Dhi"/>
                                 <include reference="r4D-Hg-bdJ"/>
                                 <include reference="rXz-4T-Eeo"/>
-                                <include reference="EzN-3I-FeD"/>
-                                <include reference="dce-lO-oaw"/>
-                                <include reference="8He-7Y-vno"/>
-                                <include reference="dvQ-Wg-9sT"/>
                                 <include reference="RnW-Ed-Lgp"/>
                                 <include reference="eXB-Ww-cuc"/>
+                                <include reference="8He-7Y-vno"/>
+                                <include reference="dvQ-Wg-9sT"/>
+                                <include reference="EzN-3I-FeD"/>
+                                <include reference="dce-lO-oaw"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -468,14 +498,14 @@
                                 <include reference="2Th-3J-T2K"/>
                                 <include reference="TND-Pr-PKg"/>
                                 <include reference="qmz-qz-7Qh"/>
-                                <include reference="Kmz-Lb-Mre"/>
-                                <include reference="oX3-4C-B6b"/>
-                                <include reference="4i7-dk-6Ac"/>
-                                <include reference="seZ-t1-ySv"/>
-                                <include reference="Dpe-NG-zF4"/>
-                                <include reference="UOd-HP-YGo"/>
+                                <include reference="nwl-YL-pjC"/>
+                                <include reference="vza-9Y-PqS"/>
                                 <include reference="Ht4-nt-Vn7"/>
                                 <include reference="Ltb-Cc-zz3"/>
+                                <include reference="Dpe-NG-zF4"/>
+                                <include reference="UOd-HP-YGo"/>
+                                <include reference="4i7-dk-6Ac"/>
+                                <include reference="seZ-t1-ySv"/>
                             </mask>
                         </variation>
                     </view>
@@ -511,7 +541,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="csH-hb-wv8"/>
+        <segue reference="MRV-2L-R5I"/>
+        <segue reference="7Lf-Kd-pAM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Belzebufo" width="2000" height="1125"/>

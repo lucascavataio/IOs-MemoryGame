@@ -53,15 +53,42 @@ class SimonSaysController: UIViewController {
     @IBOutlet weak var carnotaurusButton: UIButton!
     @IBOutlet weak var mosasaurusButton: UIButton!
     
+    var recruitTime: Float = 1000
+    var hardenedTime: Float = 600
+    var veteranTime: Float = 100
+    
+    var timeMultiply: Float = 1
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SetDifficultyLevel()
         
         images = [0: rex1Image, 1: therizinosaurusImage, 2: beelzebufoImage, 3: mononycusImage, 4: redEyesTherizinoImage, 5:rex2Image, 6: brontosImage, 7: carnotaurusImage, 8: mosasaurusImage]
         
         scoreText.text = "Score: " + String(score)
         bestScoreText.text = "Best Score: " + String(bestScore)
         
+        for s in difficulty{
+            if(difficulty[s.key]!){
+                print(difficulty[s.key]!)
+            }
+            
+        }
+        
         RestartGame()
+    }
+    
+    func SetDifficultyLevel(){
+        if(difficulty["recruit"]!){
+            timeMultiply = recruitTime
+        } else if(difficulty["hardened"]!){
+            timeMultiply = hardenedTime
+        } else{
+            timeMultiply = veteranTime
+        }
     }
     
     func ShowImages(){
@@ -87,23 +114,28 @@ class SimonSaysController: UIViewController {
         
         for id in imagesGenerated{
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(time)) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(time) ) {
                 
                 self.ShowImage(_img: self.images[id]!)
             }
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(time + 1)) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(time + Int(timeMultiply))) {
                 self.HideAllImages()
                 index += 1
                 
             }
             
-            
-            time += 2
+            if(difficulty["recruit"]!){
+                time += Int(recruitTime) * 2
+            } else if(difficulty["hardened"]!){
+                time += Int(hardenedTime) * 2
+            } else{
+                time += Int(veteranTime) * 2
+            }
 
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(time)) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(time + Int(timeMultiply))) {
             self.StartGame()
         }
         
