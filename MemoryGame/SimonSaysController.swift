@@ -153,7 +153,7 @@ class SimonSaysController: UIViewController {
     
     func GenerateNewImage() -> Int{
         
-        return Int.random(in: 0..<images.count - 1)
+        return Int.random(in: 0..<images.count)
     }
     
     func HideButtonsView(hidden: Bool){
