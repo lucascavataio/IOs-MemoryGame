@@ -8,5 +8,5 @@ To play this game you must need XCode and open this proyect on there
 This game contains 3 modes:
 
 - Recruit (1 second to see the picture)
-- Hardeneed (0.8 seconds)
-- Veteran (0.5 seconds)
+- Hardened (0.6 seconds)
+- Veteran (0.1 seconds)
