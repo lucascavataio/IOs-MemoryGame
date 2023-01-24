@@ -9,4 +9,4 @@ This game contains 3 modes:
 - Hardened (0.6 seconds)
 - Veteran (0.1 seconds)
 
-> To play this game you must need XCode and open this proyect on there
+> To play this game you must need XCode and open this project on there
